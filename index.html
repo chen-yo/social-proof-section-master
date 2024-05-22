@@ -12,41 +12,133 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <div class="container">
+      <main>
+        <div class="top">
+          <div class="hero">
+            <h1 class="hero__title">10,000+ of our users love our products.</h1>
+            <p class="hero__text">
+              We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our
+              services.
+            </p>
+          </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+          <section class="ratings" aria-label="Our ratings">
+            <article class="rating">
+              <div class="rating__stars" aria-hidden="true">
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+              </div>
+              <p class="rating__text">Rated 5 Stars in Reviews</p>
+            </article>
+            <article class="rating">
+              <div class="rating__stars" aria-hidden="true">
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+              </div>
+              <p class="rating__text">Rated 5 Stars in Report Guru</p>
+            </article>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+            <article class="rating">
+              <div class="rating__stars" aria-hidden="true">
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+                <img src="./images/icon-star.svg" />
+              </div>
+              <p class="rating__text">Rated 5 Stars in BestTech</p>
+            </article>
+          </section>
+        </div>
+        <section aria-label="Our feedbacks">
+          <ul class="feedbacks">
+            <li>
+              <figure class="feedback">
+                <div class="feedback__header">
+                  <img
+                    class="feedback__image"
+                    src="./images/image-colton.jpg"
+                    alt="Feedback author"
+                  />
+                  <figcaption class="feedback__group">
+                    <p class="feedback__group-name">Colton Smith</p>
+                    <p class="feedback__group-status">Verified Buyer</p>
+                  </figcaption>
+                </div>
+
+                <blockquote>
+                  "We needed the same printed design as the one we had ordered a
+                  week prior. Not only did they find the original order, but we
+                  also received it in time. Excellent!"
+                </blockquote>
+              </figure>
+            </li>
+            <li>
+              <figure class="feedback">
+                <div class="feedback__header">
+                  <img
+                    class="feedback__image"
+                    src="./images/image-irene.jpg"
+                    alt="Feedback author"
+                  />
+                  <figcaption class="feedback__group">
+                    <p class="feedback__group-name">Irene Roberts</p>
+                    <p class="feedback__group-status">Verified Buyer</p>
+                  </figcaption>
+                </div>
+
+                <blockquote>
+                  "Customer service is always excellent and very quick turn
+                  around. Completely delighted with the simplicity of the
+                  purchase and the speed of delivery."
+                </blockquote>
+              </figure>
+            </li>
+
+            <li>
+              <figure class="feedback">
+                <div class="feedback__header">
+                  <img
+                    class="feedback__image"
+                    src="./images/image-anne.jpg"
+                    alt="Feedback author"
+                  />
+                  <figcaption class="feedback__group">
+                    <p class="feedback__group-name">Anne Wallace</p>
+                    <p class="feedback__group-status">Verified Buyer</p>
+                  </figcaption>
+                </div>
+
+                <blockquote>
+                  "Put an order with this company and can only praise them for
+                  the very high standard. Will definitely use them again and
+                  recommend them to everyone!"
+                </blockquote>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
   </body>
 </html>
